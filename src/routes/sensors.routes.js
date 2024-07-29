@@ -61,20 +61,6 @@ router.get("/:moduleId", async (req, res) => {
         borderColor: "blue",
         tesion: 0.4,
       },
-      {
-        label: "Humedad Sensor 3",
-        data: modules.map((module) => module.sensors.humity.h_03),
-        fill: false,
-        borderColor: "yellow",
-        tesion: 0.4,
-      },
-      {
-        label: "Humedad Sensor 4",
-        data: modules.map((module) => module.sensors.humity.h_04),
-        fill: false,
-        borderColor: "green",
-        tesion: 0.4,
-      },
     ];
 
     const sun_datasets = [
