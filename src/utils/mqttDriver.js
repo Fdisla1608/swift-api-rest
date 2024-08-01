@@ -15,7 +15,6 @@ const connectToMQTT = () => {
   mqttClient.on("message", async (topic, message) => {
     try {
       const data = JSON.parse(message.toString());
-      console.log(data);
       const { moduleId, sensors } = data;
       const newSensorData = new Module({
         moduleId: moduleId,
