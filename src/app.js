@@ -26,6 +26,7 @@ app.use(cors());
 
 // Rutas de sensores
 app.use("/api/sensors", require("./routes/sensors.routes"));
+app.use("/api/terrains", require("./routes/terrain.routes"));
 
 // MQTT
 const start = async () => {
