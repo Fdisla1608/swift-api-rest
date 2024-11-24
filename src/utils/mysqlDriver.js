@@ -3,7 +3,7 @@ const mysql = require("mysql");
 
 const connectToMySQL = () => {
   const connection = mysql.createConnection({
-    host: "maptest.ddns.net",
+    host: "swift-agro.ddns.net",
     user: "client",
     password: "root1234",
     database: "santiago_db_v2",

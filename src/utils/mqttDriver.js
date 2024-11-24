@@ -2,7 +2,7 @@ const mqtt = require("mqtt");
 const Module = require("../models/module");
 
 const connectToMQTT = () => {
-  const mqttClient = mqtt.connect("ws://maptest.ddns.net:8083/mqtt");
+  const mqttClient = mqtt.connect("ws://swift-agro.ddns.net:8083/mqtt");
 
   mqttClient.on("connect", () => {
     mqttClient.subscribe("swift/modules/+", (err) => {
